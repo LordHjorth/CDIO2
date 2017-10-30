@@ -1,4 +1,4 @@
-package boardgame;
+package cageOfDoom;
 
 public class Spiller {
 
