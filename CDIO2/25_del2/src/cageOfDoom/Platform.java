@@ -14,7 +14,7 @@ public class Platform {
 		
 	Field [] fields = new Field[11];	
 	
-	fields [0] = new Street.Builder().setBgColor(Color.BLUE).setDescription("Rasmus").setTitle("Tower").setSubText("rrr").setSubText("+250").build();
+	fields [0] = new Street.Builder().setBgColor(Color.BLUE).setDescription("Tower").setTitle("Tower").setSubText("+250").build();
 	fields [1]= new Street.Builder().setBgColor(Color.RED).setDescription("Crater").setTitle("Crater").setSubText("-100").build();
 	fields [2]= new Street.Builder().setBgColor(Color.BLUE).setDescription("Palace gates").setTitle("Palace Gates").setSubText("+100").build();
 	fields [3]= new Street.Builder().setBgColor(Color.RED).setDescription("Cold Desert").setTitle("Cold Desert").setSubText("-20").build();
