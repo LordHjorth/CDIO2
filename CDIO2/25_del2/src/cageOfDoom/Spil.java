@@ -1,8 +1,12 @@
 package cageOfDoom;
 
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 
 import desktop_board.Board;
+import desktop_codebehind.Car;
+import desktop_codebehind.Car.Builder;
 import desktop_resources.GUI;
 
 public class Spil {
@@ -12,13 +16,19 @@ public class Spil {
 		Spiller spiller1 = new Spiller(JOptionPane.showInputDialog("Indtast navn, spiller 1"));
 		Spiller spiller2 = new Spiller(JOptionPane.showInputDialog("Indtast navn, spiller 2"));
 
-		GUI.addPlayer(spiller1.getNavn(), spiller1.getBalance());
-		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance());
-
+		Car car1 = new Car.Builder().typeRacecar().primaryColor(Color.BLACK).build(); 
+		Car car2 = new Car.Builder().typeUfo().primaryColor(Color.orange).build();
+		
+		GUI.addPlayer(spiller1.getNavn(), spiller1.getBalance(), car1);
+		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
+		GUI.setCar(1, spiller1.getNavn());
+		GUI.setCar(1, spiller2.getNavn());
+		
 		Terning terning = new Terning(0, 0);
-
+		
+		int felt1 = 1;  
+		int felt2 = 1; 
 		while (true) {
-
 			int runde = 1;
 
 			if (spiller1.getBalance() < 3000 && spiller2.getBalance() < 3000) {
@@ -28,8 +38,10 @@ public class Spil {
 							"Din tur " + spiller1.getNavn() + ". Tryk på knappen for at kaste terningerne", "Kast");
 					terning.random();
 					GUI.setDice(terning.getTerning1(), terning.getTerning2());
-					int felt = terning.getSum();
-					switch (felt) {
+					GUI.removeCar(felt1, spiller1.getNavn());
+					felt1 = terning.getSum();
+					GUI.setCar(felt1, spiller1.getNavn());
+					switch (felt1-1) {
 
 					case 1: // Tower
 						spiller1.setPengebeholdning(250);
@@ -98,8 +110,10 @@ public class Spil {
 							"Din tur " + spiller2.getNavn() + ". Tryk på knappen for at kaste terningerne", "Kast");
 					terning.random();
 					GUI.setDice(terning.getTerning1(), terning.getTerning2());
-					int felt = terning.getSum();
-					switch (felt) {
+					GUI.removeCar(felt2, spiller2.getNavn());
+					felt2 = terning.getSum();
+					GUI.setCar(felt2, spiller2.getNavn());
+					switch (felt2-1) {
 
 					case 1: // Tower
 						spiller2.setPengebeholdning(250);
