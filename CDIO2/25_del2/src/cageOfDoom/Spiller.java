@@ -13,12 +13,17 @@ public class Spiller {
 		this.navn = navn;
 	}
 	
-//	public void opretSpiller() {
-//		
-//		navn = JOptionPane.showInputDialog("Indtast navn, spiller 1");
-//		GUI.addPlayer(navn, 1000);
-//		
-//	}
+	public void setBalance(int point) {
+		balance = balance + point;
+	}
+	
+	public int getBalance() {
+		return balance;
+	}
+	
+	public String getNavn() {
+		return navn;
+	}
 	
 
 }
