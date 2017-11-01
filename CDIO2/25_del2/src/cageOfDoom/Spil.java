@@ -32,7 +32,7 @@ public class Spil {
 		while (true) {
 			
 			
-			if (spiller1.getBalance() >1020) {
+			if (spiller1.getBalance() >3000) {
 				
 				JOptionPane.showMessageDialog
 				(null, "Tillyke " + spiller1.getNavn() +"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
@@ -42,7 +42,7 @@ public class Spil {
 				break;
 			}
 			
-			if(spiller2.getBalance() >1020) {
+			if(spiller2.getBalance() >3000) {
 				
 				JOptionPane.showMessageDialog
 				(null, "Tillyke " + spiller2.getNavn()+"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
