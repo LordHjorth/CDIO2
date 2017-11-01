@@ -13,8 +13,8 @@ public class Spil {
 
 	public static void opretSpil() {
 
-		Spiller spiller1 = new Spiller(JOptionPane.showInputDialog("Indtast navn, spiller 1"));
-		Spiller spiller2 = new Spiller(JOptionPane.showInputDialog("Indtast navn, spiller 2"));
+		Spiller spiller1 = new Spiller(JOptionPane.showInputDialog(null, "Indtast navn, spiller 1","Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
+		Spiller spiller2 = new Spiller(JOptionPane.showInputDialog(null, "Indtast navn, spiller 2","Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
 
 		Car car1 = new Car.Builder().typeRacecar().primaryColor(Color.BLACK).build(); 
 		Car car2 = new Car.Builder().typeUfo().primaryColor(Color.orange).build();
@@ -28,7 +28,29 @@ public class Spil {
 		
 		int felt1 = 1;  
 		int felt2 = 1; 
+		
 		while (true) {
+			
+			
+			if (spiller1.getBalance() >1020) {
+				
+				JOptionPane.showMessageDialog
+				(null, "Tillyke " + spiller1.getNavn() +"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
+					,"Cage of Doom ", JOptionPane.PLAIN_MESSAGE);
+				
+//				JOptionPane.showMessageDialog(null, "TIllykke! " + spiller1.getNavn() + " Du har vundet Cage Of Doom. May the Empire be with you! ","Vinder meddelelse", JOptionPane.PLAIN_MESSAGE);
+				break;
+			}
+			
+			if(spiller2.getBalance() >1020) {
+				
+				JOptionPane.showMessageDialog
+				(null, "Tillyke " + spiller2.getNavn()+"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
+						,"Cage of Doom ", JOptionPane.PLAIN_MESSAGE);
+				
+//				JOptionPane.showMessageDialog(null, "TIllykke! " + spiller2.getNavn() + " Du har vundet Cage Of Doom. May the Empire be with you!" ,"Vinder meddelelse", JOptionPane.PLAIN_MESSAGE);;
+				break;
+			}
 			int runde = 1;
 
 			if (spiller1.getBalance() < 3000 && spiller2.getBalance() < 3000) {
@@ -177,6 +199,8 @@ public class Spil {
 				}
 
 			}
+			
+			
 
 		}
 
