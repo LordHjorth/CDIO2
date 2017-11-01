@@ -13,9 +13,6 @@ public class Spiller {
 		this.navn = navn;
 	}
 	
-	public void setBalance(int point) {
-		balance = balance + point;
-	}
 	
 	public int getBalance() {
 		return balance;
@@ -23,6 +20,11 @@ public class Spiller {
 	
 	public String getNavn() {
 		return navn;
+	}
+
+	public void setPengebeholdning(int point) {
+		balance = balance + point;
+		
 	}
 	
 

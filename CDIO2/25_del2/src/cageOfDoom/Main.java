@@ -1,7 +1,5 @@
 package cageOfDoom;
 
-import desktop_resources.GUI;
-import cageOfDoom.Terning;
 
 public class Main {
 
@@ -10,7 +8,9 @@ public class Main {
 		
 		
 	
-		Platform.OpretSpil();
+		Platform.opretSpillebræt();
+		Spil.opretSpil();
+		
 		
 		
 		
