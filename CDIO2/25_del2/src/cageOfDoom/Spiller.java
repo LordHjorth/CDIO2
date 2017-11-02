@@ -9,7 +9,6 @@ public class Spiller {
 		this.navn = navn;
 	}
 	
-	
 	public int getBalance() {
 		return balance;
 	}
