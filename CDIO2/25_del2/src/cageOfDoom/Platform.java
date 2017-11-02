@@ -32,7 +32,7 @@ public class Platform {
 	fields [4]= new Street.Builder().setBgColor(Cold_Desert).setDescription("Cold Desert").setTitle("Cold Desert").setSubText("-20").build();
 	fields [5]= new Street.Builder().setBgColor(Walled_City).setDescription("Walled City").setTitle("Walled City").setSubText("+180").build();
 	fields [6]= new Street.Builder().setBgColor(Monastery).setDescription("Monastery").setTitle("Monastery").setSubText("0").build();
-	fields [7]= new Street.Builder().setBgColor(Black_cave).setDescription("Black cave").setTitle("Black cave").setSubText("-70").build().setTextColor(Color.white);
+	fields [7]= new Street.Builder().setBgColor(Black_cave).setDescription("Black cave").setTitle("Black cave").setSubText("-70").setFgColor(Color.white).build();
 	fields [8]= new Street.Builder().setBgColor(Huts_in_the_mountain).setDescription("Huts in the mountain").setTitle("Huts in the mountain").setSubText("+60").build();
 	fields [9]= new Street.Builder().setBgColor(The_werewall).setDescription("The werewall").setTitle("The werewall").setSubText("-80").build();
 	fields [10]= new Street.Builder().setBgColor(The_pit).setDescription("The pit").setTitle("The pit").setSubText("-50").build();
