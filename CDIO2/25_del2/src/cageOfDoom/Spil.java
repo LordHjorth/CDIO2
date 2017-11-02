@@ -38,8 +38,7 @@ public class Spil {
 				(null, "Tillyke " + spiller1.getNavn() +"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
 					,"Cage of Doom ", JOptionPane.PLAIN_MESSAGE);
 				
-//				JOptionPane.showMessageDialog(null, "TIllykke! " + spiller1.getNavn() + " Du har vundet Cage Of Doom. May the Empire be with you! ","Vinder meddelelse", JOptionPane.PLAIN_MESSAGE);
-				break;
+
 			}
 			
 			if(spiller2.getBalance() >3000) {
@@ -48,7 +47,7 @@ public class Spil {
 				(null, "Tillyke " + spiller2.getNavn()+"!" + "\n Du har vundet Cage of Doom" + "\n May the Empire be with you!"
 						,"Cage of Doom ", JOptionPane.PLAIN_MESSAGE);
 				
-//				JOptionPane.showMessageDialog(null, "TIllykke! " + spiller2.getNavn() + " Du har vundet Cage Of Doom. May the Empire be with you!" ,"Vinder meddelelse", JOptionPane.PLAIN_MESSAGE);;
+
 				break;
 			}
 			int runde = 1;
