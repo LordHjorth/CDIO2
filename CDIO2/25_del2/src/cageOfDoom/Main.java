@@ -10,7 +10,7 @@ public class Main {
 		
 	
 		Platform.opretSpillebræt();
-		Spil.opretSpil();
+		Spil.spil();
 		
 		
 		

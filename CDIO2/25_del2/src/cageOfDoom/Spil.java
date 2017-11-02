@@ -10,7 +10,7 @@ import desktop_resources.GUI;
 
 public class Spil {
 
-	public static void opretSpil() throws IOException {
+	public static void spil() throws IOException {
 
 		String navnSpiller1 = Sprog.setToEngelsk()[0];
 		String navnSpiller2 = Sprog.setToEngelsk()[1];
@@ -63,7 +63,7 @@ public class Spil {
 
 			if (spiller1.getBalance() < 3000 && spiller2.getBalance() < 3000) {
 
-				if (runde % 2 != 0) {
+				while (runde % 2 != 0) {
 					if (GUI.getUserLeftButtonPressed(spiller1.getNavn() + kastTerning, kastKnap, sprog) == true) {
 						terning.random();
 						GUI.setDice(terning.getTerning1(), terning.getTerning2());
@@ -158,7 +158,7 @@ public class Spil {
 
 				}
 
-				if (runde % 2 == 0) {
+				while (runde % 2 == 0) {
 					if (GUI.getUserLeftButtonPressed(spiller2.getNavn() + kastTerning, kastKnap, sprog) == true) {
 						terning.random();
 						GUI.setDice(terning.getTerning1(), terning.getTerning2());

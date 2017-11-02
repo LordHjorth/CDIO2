@@ -1,9 +1,5 @@
 package cageOfDoom;
 
-import javax.swing.JOptionPane;
-
-import desktop_resources.GUI;
-
 public class Spiller {
 	
 	private int balance = 1000;
