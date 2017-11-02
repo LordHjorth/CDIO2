@@ -1,0 +1,7 @@
+Indtast navn, spiller1
+Indtast navn, spiller2
+ har vundet!
+May the Empire be with you!
+’s tur. Tryk for at kaste med terningerne
+Kast
+English version 

@@ -5,6 +5,8 @@ import desktop_resources.GUI;
 
 import java.awt.Color;
 
+import javax.swing.JButton;
+
 import desktop_codebehind.*;
 
 public class Platform {
@@ -26,7 +28,6 @@ public class Platform {
 	fields [11]= new Street.Builder().setBgColor(Color.BLUE).setDescription("Goldmine").setTitle("Goldmine").setSubText("+650").build();
 		
 	GUI.create(fields);	
-	
 	
 	
 		

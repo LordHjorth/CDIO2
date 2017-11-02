@@ -1,0 +1,7 @@
+Type in your name Player 1
+Type in your name Player 2
+ has won the game!
+May the Empire be with you!
+ it’s your turn. Press the button to throw the die.
+Throw
+Dansk version
