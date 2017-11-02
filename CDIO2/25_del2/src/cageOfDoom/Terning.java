@@ -2,7 +2,6 @@ package cageOfDoom;
 
 import java.util.Random;
 
-
 public class Terning {
 
 	Random random = new Random();
@@ -15,8 +14,7 @@ public class Terning {
 		this.terning1 = terning1;
 		this.terning2 = terning2;
 	}
-	
-	
+
 	public void random() {
 		terning1 = random.nextInt(6) + 1;
 		terning2 = random.nextInt(6) + 1;
@@ -35,6 +33,4 @@ public class Terning {
 		return terning2;
 	}
 
-	
 }
-

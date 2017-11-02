@@ -33,7 +33,8 @@ public class Spil {
 		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
 		GUI.setCar(1, spiller1.getNavn());
 		GUI.setCar(1, spiller2.getNavn());
-		GUI.setChanceCard("REGLER ER SOM FØLGER: " + "\n" + "bla.. bla.. bla.."); //kan bruges til at sætte reglerne i midten når intet andet er vist
+		GUI.setChanceCard("REGLER ER SOM FØLGER: " + "\n" + "bla.. bla.. bla.."); // kan bruges til at sætte reglerne i
+																					// midten når intet andet er vist
 		GUI.displayChanceCard();
 
 		Terning terning = new Terning(0, 0);
@@ -47,7 +48,7 @@ public class Spil {
 
 				JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
 						JOptionPane.PLAIN_MESSAGE);
-				
+
 				break;
 
 			}
@@ -71,7 +72,7 @@ public class Spil {
 						felt1 = terning.getSum();
 						GUI.setCar(felt1, spiller1.getNavn());
 						Platform.getFelt(felt1);
-						
+
 						switch (felt1 - 1) {
 
 						case 1: // Tower
@@ -143,8 +144,7 @@ public class Spil {
 							kastKnap = Sprog.setToEngelsk()[5];
 							sprog = Sprog.setToEngelsk()[6];
 							dansk = false;
-						}
-						else if (dansk == false) {
+						} else if (dansk == false) {
 							navnSpiller1 = Sprog.setToDansk()[0];
 							navnSpiller2 = Sprog.setToDansk()[1];
 							tillykke = Sprog.setToDansk()[2];
@@ -166,7 +166,7 @@ public class Spil {
 						felt2 = terning.getSum();
 						GUI.setCar(felt2, spiller2.getNavn());
 						Platform.getFelt(felt2);
-						
+
 						switch (felt2 - 1) {
 
 						case 1: // Tower
@@ -238,8 +238,7 @@ public class Spil {
 							kastKnap = Sprog.setToEngelsk()[5];
 							sprog = Sprog.setToEngelsk()[6];
 							dansk = false;
-						}
-						else if (dansk == false) {
+						} else if (dansk == false) {
 							navnSpiller1 = Sprog.setToDansk()[0];
 							navnSpiller2 = Sprog.setToDansk()[1];
 							tillykke = Sprog.setToDansk()[2];

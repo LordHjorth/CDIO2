@@ -10,23 +10,22 @@ public class Sprog {
 
 		String file = "src/Sprog/Dansk.txt";
 		BufferedReader reader = new BufferedReader(new FileReader(file));
-		
+
 		String currentline = null;
 		int antalLinjer = 7;
 		String[] dansk = new String[antalLinjer];
-		
+
 		for (int i = 0; i < antalLinjer; i++) {
-				currentline = reader.readLine();
-				dansk[i] = currentline;
+			currentline = reader.readLine();
+			dansk[i] = currentline;
 		}
 
-
 		reader.close();
-		
+
 		return dansk;
 
 	}
-	
+
 	public static String[] setToEngelsk() throws IOException {
 
 		String file = "src/Sprog/Engelsk.txt";
@@ -35,19 +34,13 @@ public class Sprog {
 		int antalLinjer = 7;
 		String[] engelsk = new String[antalLinjer];
 		for (int i = 0; i < antalLinjer; i++) {
-				currentline = reader.readLine();
-				engelsk[i] = currentline;
+			currentline = reader.readLine();
+			engelsk[i] = currentline;
 		}
 		reader.close();
-		
-		
+
 		return engelsk;
 
 	}
-	
-	
-	
-	
+
 }
-
-
