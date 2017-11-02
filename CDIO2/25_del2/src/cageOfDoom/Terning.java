@@ -59,5 +59,6 @@ public class Terning {
 	public void nulstilPoint2() {
 		point2 = 0;
 	}
+	
 }
 

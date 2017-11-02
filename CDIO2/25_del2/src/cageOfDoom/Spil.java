@@ -5,9 +5,7 @@ import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
-import desktop_board.Board;
 import desktop_codebehind.Car;
-import desktop_codebehind.Car.Builder;
 import desktop_resources.GUI;
 
 public class Spil {
@@ -35,6 +33,8 @@ public class Spil {
 		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
 		GUI.setCar(1, spiller1.getNavn());
 		GUI.setCar(1, spiller2.getNavn());
+		GUI.setChanceCard("REGLER ER SOM FØLGER: " + "\n" + "bla.. bla.. bla.."); //kan bruges til at sætte reglerne i midten når intet andet er vist
+		GUI.displayChanceCard();
 
 		Terning terning = new Terning(0, 0);
 
@@ -43,16 +43,18 @@ public class Spil {
 
 		while (true) {
 
-			if (spiller1.getBalance() > 3000) {
+			if (spiller1.getBalance() >= 3000) {
 
-				JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n +" + empire, "Cage of Doom ",
+				JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
 						JOptionPane.PLAIN_MESSAGE);
+				
+				break;
 
 			}
 
-			if (spiller2.getBalance() > 3000) {
+			if (spiller2.getBalance() >= 3000) {
 
-				JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n +" + empire, "Cage of Doom ",
+				JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
 						JOptionPane.PLAIN_MESSAGE);
 
 				break;
@@ -68,6 +70,8 @@ public class Spil {
 						GUI.removeCar(felt1, spiller1.getNavn());
 						felt1 = terning.getSum();
 						GUI.setCar(felt1, spiller1.getNavn());
+						Platform.getFelt(felt1);
+						
 						switch (felt1 - 1) {
 
 						case 1: // Tower
@@ -161,6 +165,8 @@ public class Spil {
 						GUI.removeCar(felt2, spiller2.getNavn());
 						felt2 = terning.getSum();
 						GUI.setCar(felt2, spiller2.getNavn());
+						Platform.getFelt(felt2);
+						
 						switch (felt2 - 1) {
 
 						case 1: // Tower
