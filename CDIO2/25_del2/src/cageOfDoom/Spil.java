@@ -33,7 +33,7 @@ public class Spil {
 		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
 		GUI.setCar(1, spiller1.getNavn());
 		GUI.setCar(1, spiller2.getNavn());
-		GUI.setChanceCard("REGLER ER SOM FØLGER: " + "\n" + "bla.. bla.. bla.."); // kan bruges til at sætte reglerne i
+		GUI.setChanceCard("REGLER: Hver spiller starter med 1000 point. Hver spiller slår med 2 terninger, summen af øjenene placerer spilleren på et felt, hvilket har negativ eller positiv konsekvens for pointsatsen. Lander du på felt 10 får du en ekstra tur."); // kan bruges til at sætte reglerne i
 																					// midten når intet andet er vist
 		GUI.displayChanceCard();
 
