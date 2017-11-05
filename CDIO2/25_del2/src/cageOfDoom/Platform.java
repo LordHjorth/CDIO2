@@ -5,11 +5,17 @@ import desktop_resources.GUI;
 
 import java.awt.Color;
 
+import desktop_codebehind.Car;
+
 public class Platform {
 
 	private static Field[] fields = new Field[21];
+	public static Car car1, car2;
 
 	public static void opretSpillebræt() {
+		
+		car1 = new Car.Builder().typeRacecar().primaryColor(Color.BLACK).build();
+		car2 = new Car.Builder().typeUfo().primaryColor(Color.orange).build();
 
 		Color Start = new Color(76, 153, 0);
 		Color Tower = new Color(74, 159, 223);

@@ -1,16 +1,14 @@
 package cageOfDoom;
 
-import java.awt.Color;
 import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
-import desktop_codebehind.Car;
 import desktop_resources.GUI;
 
 public class Spil {
-
-	public static void spil() throws IOException {
+	
+	public static void startSpil() throws IOException {
 
 		String navnSpiller1 = Sprog.setToEngelsk()[0];
 		String navnSpiller2 = Sprog.setToEngelsk()[1];
@@ -21,16 +19,11 @@ public class Spil {
 		String sprog = Sprog.setToEngelsk()[6];
 		boolean dansk = false;
 
-		Spiller spiller1 = new Spiller(
-				JOptionPane.showInputDialog(null, navnSpiller1, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
-		Spiller spiller2 = new Spiller(
-				JOptionPane.showInputDialog(null, navnSpiller2, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
-
-		Car car1 = new Car.Builder().typeRacecar().primaryColor(Color.BLACK).build();
-		Car car2 = new Car.Builder().typeUfo().primaryColor(Color.orange).build();
-
-		GUI.addPlayer(spiller1.getNavn(), spiller1.getBalance(), car1);
-		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
+		Spiller spiller1 = new Spiller(JOptionPane.showInputDialog(null, navnSpiller1, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
+		Spiller spiller2 = new Spiller(JOptionPane.showInputDialog(null, navnSpiller2, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
+		
+		GUI.addPlayer(spiller1.getNavn(), spiller1.getBalance(), Platform.car1);
+		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), Platform.car2);
 		GUI.setCar(1, spiller1.getNavn());
 		GUI.setCar(1, spiller2.getNavn());
 		GUI.setChanceCard("REGLER ER SOM FØLGER: " + "\n" + "bla.. bla.. bla.."); // kan bruges til at sætte reglerne i
@@ -44,22 +37,7 @@ public class Spil {
 
 		while (true) {
 
-			if (spiller1.getBalance() >= 3000) {
-
-				JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
-						JOptionPane.PLAIN_MESSAGE);
-
-				break;
-
-			}
-
-			if (spiller2.getBalance() >= 3000) {
-
-				JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
-						JOptionPane.PLAIN_MESSAGE);
-
-				break;
-			}
+			
 			int runde = 1;
 
 			if (spiller1.getBalance() < 3000 && spiller2.getBalance() < 3000) {
@@ -70,8 +48,8 @@ public class Spil {
 						GUI.setDice(terning.getTerning1(), terning.getTerning2());
 						GUI.removeCar(felt1, spiller1.getNavn());
 						felt1 = terning.getSum();
+						Platform.getFelt(felt1-1);
 						GUI.setCar(felt1, spiller1.getNavn());
-						Platform.getFelt(felt1);
 
 						switch (felt1 - 1) {
 
@@ -164,8 +142,8 @@ public class Spil {
 						GUI.setDice(terning.getTerning1(), terning.getTerning2());
 						GUI.removeCar(felt2, spiller2.getNavn());
 						felt2 = terning.getSum();
+						Platform.getFelt(felt2-1);
 						GUI.setCar(felt2, spiller2.getNavn());
-						Platform.getFelt(felt2);
 
 						switch (felt2 - 1) {
 
@@ -249,7 +227,22 @@ public class Spil {
 							dansk = true;
 						}
 					}
+					if (spiller1.getBalance() >= 3000) {
 
+						JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
+								JOptionPane.PLAIN_MESSAGE);
+
+						break;
+
+					}
+
+					if (spiller2.getBalance() >= 3000) {
+
+						JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
+								JOptionPane.PLAIN_MESSAGE);
+
+						break;
+					}
 				}
 
 			}
