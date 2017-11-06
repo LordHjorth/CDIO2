@@ -2,7 +2,7 @@ package cageOfDoom;
 
 public class Spiller {
 
-	private int balance = 0;
+	private int balance = 1000;
 	private String navn;
 
 	public Spiller(String navn) {

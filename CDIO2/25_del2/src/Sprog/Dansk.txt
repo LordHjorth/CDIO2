@@ -1,7 +1,21 @@
-Indtast navn, spiller1
+Indtast navn, spiller1 
 Indtast navn, spiller2
  har vundet!
 May the Empire be with you!
 ’s tur. Tryk for at kaste med terningerne
 Kast
 English version 
+<html> +250 <br> ... </html>
+<html> -100 <br> ... </html>
+<html> +100 <br> ... </html>
+<html> -20 <br> ...  </html>
+<html> +180 <br> ... </html>
+<html> 0 <br> ...  </html>
+<html> -70 <br> ...  </html>
+<html> +60 <br> ...  </html>
+<html> -80 <br> ...  </html>
+<html> -50 <br> ...  </html>
+<html> +650 <br> ...  </html>
+<html> Tryk på det store ' ? ' <br> for at se reglerne </html>
+Regler
+REGLER: Hver spiller starter med 1000 point. Hver spiller slår med 2 terninger, summen af øjenene placerer spilleren på et felt, hvilket har negativ eller positiv konsekvens for pointsatsen. Lander du på felt 10 får du en ekstra tur.

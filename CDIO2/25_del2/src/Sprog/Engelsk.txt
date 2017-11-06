@@ -5,3 +5,17 @@ May the Empire be with you!
  it’s your turn. Press the button to throw the die.
 Throw
 Dansk version
+<html> +250 <br> You sell Rapunzels Hair </html>
+<html> -100 <br> Ladders are expensive </html>
+<html> +100 <br> A crystal fell of the gates </html>
+<html> -20 <br> You buy a warm coat. </html>
+<html> +180 <br> You tell stories of world </html>
+<html> 0 <br> A little peace and quiet </html>
+<html> -70 <br> The cost of illumination. </html>
+<html> +60 <br> Location is everything </html>
+<html> -80 <br> You get an extra go! </html>
+<html> -50 <br> AKA Hell on earth </html>
+<html> +650 <br> A goldmine, you´re rich! </html>
+<html> Tab the question mark <br> to see the rules </html>
+Rules
+Rules: Each player starts with 1000 points. Each player hits 2 dice, the sum of the eyes places the player on a field, which has a negative or positive consequence for the score. If you land on field 10, you get an extra trip.

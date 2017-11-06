@@ -10,21 +10,36 @@ import desktop_resources.GUI;
 
 public class Spil {
 
+	static String tillykke, empire, kastTerning, kastKnap, sprog, tower, crater, palace_gates, cold_desert, walled_city,
+			monastery, black_cave, huts, werewall, pit, goldmine, regler1, regler2;
+
 	public static void spil() throws IOException {
 
-		String navnSpiller1 = Sprog.setToEngelsk()[0];
-		String navnSpiller2 = Sprog.setToEngelsk()[1];
-		String tillykke = Sprog.setToEngelsk()[2];
-		String empire = Sprog.setToEngelsk()[3];
-		String kastTerning = Sprog.setToEngelsk()[4];
-		String kastKnap = Sprog.setToEngelsk()[5];
-		String sprog = Sprog.setToEngelsk()[6];
+		tillykke = Sprog.setToEngelsk()[2];
+		empire = Sprog.setToEngelsk()[3];
+		kastTerning = Sprog.setToEngelsk()[4];
+		kastKnap = Sprog.setToDansk()[5];
+		sprog = Sprog.setToEngelsk()[6];
+		tower = Sprog.setToEngelsk()[7];
+		crater = Sprog.setToEngelsk()[8];
+		palace_gates = Sprog.setToEngelsk()[9];
+		cold_desert = Sprog.setToEngelsk()[10];
+		walled_city = Sprog.setToEngelsk()[11];
+		monastery = Sprog.setToEngelsk()[12];
+		black_cave = Sprog.setToEngelsk()[13];
+		huts = Sprog.setToEngelsk()[14];
+		werewall = Sprog.setToEngelsk()[15];
+		pit = Sprog.setToEngelsk()[16];
+		goldmine = Sprog.setToEngelsk()[17];
+		regler1 = Sprog.setToEngelsk()[18];
+		regler2 = Sprog.setToEngelsk()[19];
+
 		boolean dansk = false;
 
 		Spiller spiller1 = new Spiller(
-				JOptionPane.showInputDialog(null, navnSpiller1, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
+				JOptionPane.showInputDialog(null, Sprog.setToEngelsk()[0], "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
 		Spiller spiller2 = new Spiller(
-				JOptionPane.showInputDialog(null, navnSpiller2, "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
+				JOptionPane.showInputDialog(null, Sprog.setToEngelsk()[1], "Cage of Doom ", JOptionPane.PLAIN_MESSAGE));
 
 		Car car1 = new Car.Builder().typeRacecar().primaryColor(Color.BLACK).build();
 		Car car2 = new Car.Builder().typeUfo().primaryColor(Color.orange).build();
@@ -33,33 +48,18 @@ public class Spil {
 		GUI.addPlayer(spiller2.getNavn(), spiller2.getBalance(), car2);
 		GUI.setCar(1, spiller1.getNavn());
 		GUI.setCar(1, spiller2.getNavn());
-		GUI.setChanceCard("REGLER: Hver spiller starter med 1000 point. Hver spiller slår med 2 terninger, summen af øjenene placerer spilleren på et felt, hvilket har negativ eller positiv konsekvens for pointsatsen. Lander du på felt 10 får du en ekstra tur."); // kan bruges til at sætte reglerne i
-																					// midten når intet andet er vist
+
 		GUI.displayChanceCard();
 
 		Terning terning = new Terning(0, 0);
 
 		int felt1 = 1;
 		int felt2 = 1;
+		boolean spil = true;
 
-		while (true) {
+		while (spil == true) {
 
-			if (spiller1.getBalance() >= 3000) {
-
-				JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
-						JOptionPane.PLAIN_MESSAGE);
-
-				break;
-
-			}
-
-			if (spiller2.getBalance() >= 3000) {
-
-				JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
-						JOptionPane.PLAIN_MESSAGE);
-
-				break;
-			}
+			
 			int runde = 1;
 
 			if (spiller1.getBalance() < 3000 && spiller2.getBalance() < 3000) {
@@ -136,22 +136,25 @@ public class Spil {
 						}
 					} else {
 						if (dansk == true) {
-							navnSpiller1 = Sprog.setToEngelsk()[0];
-							navnSpiller2 = Sprog.setToEngelsk()[1];
 							tillykke = Sprog.setToEngelsk()[2];
 							empire = Sprog.setToEngelsk()[3];
 							kastTerning = Sprog.setToEngelsk()[4];
 							kastKnap = Sprog.setToEngelsk()[5];
 							sprog = Sprog.setToEngelsk()[6];
+							regler2 = Sprog.setToEngelsk()[20];
+							GUI.setChanceCard(regler2);
+							Sprog.setSubText(dansk);
+							
 							dansk = false;
 						} else if (dansk == false) {
-							navnSpiller1 = Sprog.setToDansk()[0];
-							navnSpiller2 = Sprog.setToDansk()[1];
 							tillykke = Sprog.setToDansk()[2];
 							empire = Sprog.setToDansk()[3];
 							kastTerning = Sprog.setToDansk()[4];
 							kastKnap = Sprog.setToDansk()[5];
 							sprog = Sprog.setToDansk()[6];
+							regler2 = Sprog.setToDansk()[20];
+							GUI.setChanceCard(regler2);
+							Sprog.setSubText(dansk);
 							dansk = true;
 						}
 					}
@@ -230,26 +233,45 @@ public class Spil {
 						}
 					} else {
 						if (dansk == true) {
-							navnSpiller1 = Sprog.setToEngelsk()[0];
-							navnSpiller2 = Sprog.setToEngelsk()[1];
 							tillykke = Sprog.setToEngelsk()[2];
 							empire = Sprog.setToEngelsk()[3];
 							kastTerning = Sprog.setToEngelsk()[4];
 							kastKnap = Sprog.setToEngelsk()[5];
 							sprog = Sprog.setToEngelsk()[6];
+							regler2 = Sprog.setToEngelsk()[20];
+							GUI.setChanceCard(regler2);
+							Sprog.setSubText(dansk);
 							dansk = false;
+							
 						} else if (dansk == false) {
-							navnSpiller1 = Sprog.setToDansk()[0];
-							navnSpiller2 = Sprog.setToDansk()[1];
 							tillykke = Sprog.setToDansk()[2];
 							empire = Sprog.setToDansk()[3];
 							kastTerning = Sprog.setToDansk()[4];
 							kastKnap = Sprog.setToDansk()[5];
 							sprog = Sprog.setToDansk()[6];
+							regler2 = Sprog.setToDansk()[20];
+							GUI.setChanceCard(regler2);
+							Sprog.setSubText(dansk);
 							dansk = true;
 						}
+
+					}
+					
+					if (spiller1.getBalance() >= 3000) {
+
+						JOptionPane.showMessageDialog(null, spiller1.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
+								JOptionPane.PLAIN_MESSAGE);
+						spil = false;
+
 					}
 
+					if (spiller2.getBalance() >= 3000) {
+
+						JOptionPane.showMessageDialog(null, spiller2.getNavn() + tillykke + "\n" + empire, "Cage of Doom ",
+								JOptionPane.PLAIN_MESSAGE);
+
+						spil = false;
+					}
 				}
 
 			}
