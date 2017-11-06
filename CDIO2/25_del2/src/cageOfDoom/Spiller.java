@@ -2,7 +2,7 @@ package cageOfDoom;
 
 public class Spiller {
 
-	private int balance = 1000;
+	private int balance = 0;
 	private String navn;
 
 	public Spiller(String navn) {
@@ -17,9 +17,14 @@ public class Spiller {
 		return navn;
 	}
 
-	public void setPengebeholdning(int point) {
+	public int setPengebeholdning(int point) {
 		balance = balance + point;
 
+		if (balance < 0) {
+			balance = 0;
+		}
+		
+		return balance;
 	}
 
 }
