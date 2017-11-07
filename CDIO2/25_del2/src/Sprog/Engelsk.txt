@@ -5,17 +5,17 @@ May the Empire be with you!
  it’s your turn. Press the button to throw the die.
 Throw
 Dansk version
-<html> +250 <br> You sell Rapunzels Hair </html>
-<html> -100 <br> Ladders are expensive </html>
-<html> +100 <br> A crystal fell of the gates </html>
-<html> -20 <br> You buy a warm coat. </html>
-<html> +180 <br> You tell stories of world </html>
-<html> 0 <br> A little peace and quiet </html>
-<html> -70 <br> The cost of illumination. </html>
-<html> +60 <br> Location is everything </html>
-<html> -80 <br> You get an extra go! </html>
-<html> -50 <br> AKA Hell on earth </html>
-<html> +650 <br> A goldmine, you´re rich! </html>
-<html> Tab the question mark <br> to see the rules </html>
+<html> +250 <br> After a long climb you lack air, but you find a lock of Rapunzels hair, the climb might have been bold, but you sell the hair for 250gold  </html>
+<html> -100 <br> Falling down into a crater, you might need to buy a ladder for later. </html>
+<html> +100 <br> You chip a crystal of the gates and put it in your pocket, all of a sudden, the prices of crystals skyrocket. </html>
+<html> -20 <br> When your breath freezes in you throat, it might be great to buy a warm coat. </html>
+<html> +180 <br> In a walled and isolated city you earn money telling stories and being witty. </html>
+<html> 0 <br> While a monastery brings little gold for your bowl, it brings peace and quiet for the soul.</html>
+<html> -70 <br> In the blackest cave, let darkness be your slave, bring a lantern. </html>
+<html> +60 <br> A hut with this kind of view, sell it and your pockets are filled anew.  </html>
+<html> -80 <br> Lycanthropy is a burn, you buy painkillers and try to be stern, eventually you get an extra turn! </html>
+<html> -50 <br> The pit, the abyss, some call it hell, you got to know it well, alas to get free, there is a price to pay you see.</html>
+<html> +650 <br> You stumble upon a goldmine, the purest of gold is thine! </html>
+<html> <br> Tab the question mark to see the rules. </html>
 Rules
-Rules: Each player starts with 1000 points. Each player hits 2 dice, the sum of the eyes places the player on a field, which has a negative or positive consequence for the score. If you land on field 10, you get an extra trip.
+Rules: Each player starts with 1000 points. Each player rolls 2 dice, the sum of the facevalue places the player on a field, which has a negative or positive consequence for the players point score. If you land on field 10, you get an extra turn.

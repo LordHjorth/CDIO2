@@ -5,17 +5,17 @@ May the Empire be with you!
 ’s tur. Tryk for at kaste med terningerne
 Kast
 English version 
-<html> +250 <br> ... </html>
-<html> -100 <br> ... </html>
-<html> +100 <br> ... </html>
-<html> -20 <br> ...  </html>
-<html> +180 <br> ... </html>
-<html> 0 <br> ...  </html>
-<html> -70 <br> ...  </html>
-<html> +60 <br> ...  </html>
-<html> -80 <br> ...  </html>
-<html> -50 <br> ...  </html>
-<html> +650 <br> ...  </html>
+<html> +250 <br> Du klatre til tops og taber vejret, finder Rapunzel, svinger sværdet, du griber den faldne lok hår og sælger den for 250 guld i år.</html>
+<html> -100 <br> Du falder ned i et krater og nogle vil sige, at det er en god ide at købe en stige.</html>
+<html> +100 <br> Laver man en port med guld og ædelsten, kan man ikke blive forbavset hvis nogen stjæler en.</html>
+<html> -20 <br> I den koldeste ørken vil du mig takke, hvis du på forhånd har købt en god frakke.</html>
+<html> +180 <br> En by i isolation, betaler gode penge, til den der nyheder fra verden udenfor vil bringe./html>
+<html> 0 <br> Et par timer i et kloster, er ikke noget der koster, men du får heller intet igen, medmindre religion er din ven. </html>
+<html> -70 <br> I en mørk hule kan du let få en bule, medmindre køber en lampe! </html>
+<html> +60 <br> En hytte i bjergene med en udsigt så fin, giver gode indtægter i lommen din. </html>
+<html> -80 <br> At blive til en varulv koster smertestillende hele året, men du får en ekstra tur som plaster på såret. </html>
+<html> -50 <br> Falder man i et bundløst hul, kan udgifterne for at komme op næppe blive nul.</html>
+<html> +650 <br> Hvis man finder en guldmine behøver man ej yde, for guldet vil flyde.</html>
 <html> Tryk på det store ' ? ' <br> for at se reglerne </html>
 Regler
 REGLER: Hver spiller starter med 1000 point. Hver spiller slår med 2 terninger, summen af øjenene placerer spilleren på et felt, hvilket har negativ eller positiv konsekvens for pointsatsen. Lander du på felt 10 får du en ekstra tur.

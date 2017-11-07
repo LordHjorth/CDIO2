@@ -50,7 +50,6 @@ public class Sprog {
 			Platform.getFields()[20].setSubText(Sprog.setToEngelsk()[18]);
 			Platform.getFields()[20].setDescription(Sprog.setToEngelsk()[19]);
 			Platform.getFields()[20].setTitle(Sprog.setToEngelsk()[19]);
-			System.out.println(Sprog.setToEngelsk()[1]);
 		}
 		if (dansk == false) {
 			Platform.getFields()[1].setSubText(Sprog.setToDansk()[7]);
@@ -67,7 +66,6 @@ public class Sprog {
 			Platform.getFields()[20].setSubText(Sprog.setToDansk()[18]);
 			Platform.getFields()[20].setDescription(Sprog.setToDansk()[19]);
 			Platform.getFields()[20].setTitle(Sprog.setToDansk()[19]);
-			System.out.println(Sprog.setToDansk()[1]);
 		}
 	}
 }
